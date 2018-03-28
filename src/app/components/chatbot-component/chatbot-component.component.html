@@ -1,0 +1,12 @@
+<div class="global">
+   
+    <div  class="chatform" *ngIf="visible">
+        <message-list [messages]="messages"></message-list>
+        <message-form [message]="message" [messages]="messages"></message-form>
+      </div>
+      <div class="container">
+          <img src="\assets\images\Robo.gif"  width="150" height="150" (click)="visible = !visible">
+         
+        </div>
+       
+</div>
